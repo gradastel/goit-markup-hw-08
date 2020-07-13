@@ -1,0 +1,55 @@
+.is-hidden .modal {
+  transform: scale(0);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  transform: scale(1);
+
+  width: 450px;
+  @media screen and (min-width: 768px) {
+    width: 528px;
+  }
+  padding: 40px;
+  background-color: #ffffff;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 15px * 2;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #212121;
+  }
+}
+
+.button-close {
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: #212121;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &:hover {
+    fill: #2196f3;
+  }
+
+  &__icon {
+    width: 11px;
+    height: 11px;
+  }
+}

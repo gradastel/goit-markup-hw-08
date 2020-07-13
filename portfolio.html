@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__items">
+        <a href="./index.html" class="logo header__logo">
+          <span class="logo__text">Web</span> Studio
+        </a>
+        <button type="button" class="menu__button" data-menu-button>
+          <svg width="40" height="40">
+            <use
+              class="icon__cross"
+              href="./images/svg/symbol-defs.svg#cross"
+            ></use>
+            <use
+              class="icon__menu"
+              href="./images/svg/symbol-defs.svg#menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu" data-menu>
+          <nav class="menu__item nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link nav__link--accent"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="menu__item contact">
+            <li class="contact__item">
+              <a href="mailto:info@devstudio.com" class="contact__link">
+                <svg class="contact__icon">
+                  <use href="./images/svg/symbol-defs.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contact__item">
+              <a href="tel:+380961111111" class="contact__link">
+                <svg class="contact__icon">
+                  <use href="./images/svg/symbol-defs.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="layout__section">
+        <div class="container">
+          <h1 class="layout__title visually-hidden">Card set</h1>
+          <ul class="nav-card">
+            <li class="nav-card__item">
+              <a href="" class="nav-card__link">
+                Все
+              </a>
+            </li>
+            <li class="nav-card__item">
+              <a href="" class="nav-card__link">
+                Веб-сайты
+              </a>
+            </li>
+            <li class="nav-card__item">
+              <a href="" class="nav-card__link">
+                Приложения
+              </a>
+            </li>
+            <li class="nav-card__item">
+              <a href="" class="nav-card__link">
+                Дизайн
+              </a>
+            </li>
+            <li class="nav-card__item">
+              <a href="" class="nav-card__link">
+                Маркетинг
+              </a>
+            </li>
+          </ul>
+          <ul class="cards">
+            <li class="cards__item product">
+              <a href="" class="product__link">
+                <div class="wrap product__wrap">
+                  <img
+                    srcset="
+                      ./images/portfolio/example1.jpg    1x,
+                      ./images/portfolio/example1@2x.jpg 2x
+                    "
+                    src="./images/portfolio/example1.jpg"
+                    alt="example1"
+                    class="img"
+                  />
+                  <div class="product__contains">
+                    <p class="product__text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__container">
+                  <h2 class="product__title">Технокряк</h2>
+                  <p class="product__desc">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item product">
+              <a href="" class="product__link">
+                <div class="wrap product__wrap">
+                  <img
+                    srcset="
+                      ./images/portfolio/example2.jpg    1x,
+                      ./images/portfolio/example2@2x.jpg 2x
+                    "
+                    src="./images/portfolio/example2.jpg"
+                    alt="example2"
+                    class="img"
+                  />
+                  <div class="product__contains">
+                    <p class="product__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Neque, nihil.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__container">
+                  <h2 class="product__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="product__desc">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item product">
+              <a href="" class="product__link">
+                <div class="wrap product__wrap">
+                  <img
+                    srcset="
+                      ./images/portfolio/example3.jpg    1x,
+                      ./images/portfolio/example3@2x.jpg 2x
+                    "
+                    src="./images/portfolio/example3.jpg"
+                    alt="example3"
+                    class="img"
+                  />
+                  <div class="product__contains">
+                    <p class="product__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Iure, quasi.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__container">
+                  <h2 class="product__title">Ресторан Seafood</h2>
+                  <p class="product__desc">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item product">
+              <a href="" class="product__link">
+                <div class="wrap product__wrap">
+                  <img
+                    srcset="
+                      ./images/portfolio/example4.jpg    1x,
+                      ./images/portfolio/example4@2x.jpg 2x
+                    "
+                    src="./images/portfolio/example4.jpg"
+                    alt="example4"
+                    class="img"
+                  />
+                  <div class="product__contains">
+                    <p class="product__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Temporibus, illum?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__container">
+                  <h2 class="product__title">Проект Prime</h2>
+                  <p class="product__desc">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item product">
+              <a href="" class="product__link">
+                <div class="wrap product__wrap">
+                  <img
+                    srcset="
+                      ./images/portfolio/example5.jpg    1x,
+                      ./images/portfolio/example5@2x.jpg 2x
+                    "
+                    src="./images/portfolio/example5.jpg"
+                    alt="example5"
+                    class="img"
+                  />
+                  <div class="product__contains">
+                    <p class="product__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quia, ad?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__container">
+                  <h2 class="product__title">Проект Boxes</h2>
+                  <p class="product__desc">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item product">
+              <a href="" class="product__link">
+                <div class="wrap product__wrap">
+                  <img
+                    srcset="
+                      ./images/portfolio/example6.jpg    1x,
+                      ./images/portfolio/example6@2x.jpg 2x
+                    "
+                    src="./images/portfolio/example6.jpg"
+                    alt="example6"
+                    class="img"
+                  />
+                  <div class="product__contains">
+                    <p class="product__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dolorem, maiores!
+                    </p>
+                  </div>
+                </div>
+                <div class="product__container">
+                  <h2 class="product__title">Inspiration has no Borders</h2>
+                  <p class="product__desc">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item product">
+              <a href="" class="product__link">
+                <div class="wrap product__wrap">
+                  <img
+                    srcset="
+                      ./images/portfolio/example7.jpg    1x,
+                      ./images/portfolio/example7@2x.jpg 2x
+                    "
+                    src="./images/portfolio/example7.jpg"
+                    alt="example7"
+                    class="img"
+                  />
+                  <div class="product__contains">
+                    <p class="product__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Consequuntur, odit?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__container">
+                  <h2 class="product__title">Издание Limited Edition</h2>
+                  <p class="product__desc">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item product">
+              <a href="" class="product__link">
+                <div class="wrap product__wrap">
+                  <img
+                    srcset="
+                      ./images/portfolio/example8.jpg    1x,
+                      ./images/portfolio/example8@2x.jpg 2x
+                    "
+                    src="./images/portfolio/example8.jpg"
+                    alt="example8"
+                    class="img"
+                  />
+                  <div class="product__contains">
+                    <p class="product__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nesciunt, voluptatem!
+                    </p>
+                  </div>
+                </div>
+                <div class="product__container">
+                  <h2 class="product__title">Проект LAB</h2>
+                  <p class="product__desc">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item product">
+              <a href="" class="product__link">
+                <div class="wrap product__wrap">
+                  <img
+                    srcset="
+                      ./images/portfolio/example9.jpg    1x,
+                      ./images/portfolio/example9@2x.jpg 2x
+                    "
+                    src="./images/portfolio/example9.jpg"
+                    alt="example9"
+                    class="img"
+                  />
+                  <div class="product__contains">
+                    <p class="product__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fuga esse numquam ducimus explicabo ex provident. Quam,
+                      accusantium hic? Sequi, ex?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__container">
+                  <h2 class="product__title">Growing Business</h2>
+                  <p class="product__desc">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__wrap">
+          <div class="page-footer__list">
+            <div class="page-footer__item">
+              <a href="./index.html" class="logo page-footer__logo">
+                <span class="logo__text">Web</span> Studio
+              </a>
+              <address class="address">
+                <ul class="address__list">
+                  <li class="address__item">
+                    <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+                  </li>
+                  <li class="address__item">
+                    <a href="mailto:info@devstudio.com" class="address__link">
+                      info@devstudio.com
+                    </a>
+                  </li>
+                  <li class="address__item">
+                    <a href="tel:+380961111111" class="address__link">
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <div class="page-footer__item">
+              <p class="page-footer__title">присоединяйтесь</p>
+              <ul class="social page-footer__social">
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="instagram link">
+                    <svg class="social__icon">
+                      <use href="./images/svg/symbol-defs.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="twitter link">
+                    <svg class="social__icon">
+                      <use href="./images/svg/symbol-defs.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="facebook link">
+                    <svg class="social__icon">
+                      <use href="./images/svg/symbol-defs.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="linkedin link">
+                    <svg class="social__icon">
+                      <use href="./images/svg/symbol-defs.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-footer__item page-footer__item--flex">
+            <p class="page-footer__title">Подпишитесь на рассылку</p>
+            <form class="page-footer__form">
+              <input
+                type="email"
+                class="page-footer__input"
+                name="mail"
+                placeholder="E-mail"
+              />
+              <button class="button button__icon" type="submit">
+                Подписаться
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+    <script>
+      const { height: pageHeaderHeigth } = document
+        .querySelector(".header")
+        .getBoundingClientRect();
+      document.body.style.paddingTop = `${pageHeaderHeigth}px`;
+    </script>
+  </body>
+</html>

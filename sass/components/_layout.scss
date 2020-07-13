@@ -1,0 +1,31 @@
+.layout {
+  &__section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__section--no-gap-top {
+    padding-top: 0;
+  }
+
+  &__section--only-desktop {
+    @media screen and (max-width: calc(#{1200px} - 1px)) {
+      display: none;
+    }
+  }
+
+  &__section--bgc-grey {
+    background: #f5f4fa;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+
+    color: #212121;
+  }
+}

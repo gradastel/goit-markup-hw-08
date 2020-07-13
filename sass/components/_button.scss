@@ -1,0 +1,32 @@
+.button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 32px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  &.button__icon {
+    display: flex;
+  }
+  &__icon::after {
+    content: "";
+
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/svg/icon_send.svg);
+  }
+}
